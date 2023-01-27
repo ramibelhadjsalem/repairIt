@@ -10,7 +10,6 @@ import { BestRepairersComponent } from './components/best-repairers/best-repaire
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
 @NgModule({
   declarations: [
     CarouselHomeComponent,
