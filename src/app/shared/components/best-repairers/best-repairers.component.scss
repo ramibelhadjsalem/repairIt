@@ -24,14 +24,14 @@
 
     .title {
       font-family: 'Poppins', sans-serif;
-      font-size: 60px;
+      font-size: clamp(25px,4vw,60px);
       text-transform: uppercase;
       color: #0C438C;
     }
 
     .text {
       font-family: 'Rubik', sans-serif;
-      max-width: 50%;
+      max-width: 80%;
       color: #999999;
       text-align: center;
     }
@@ -42,7 +42,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px;
+    padding:20px 50px ;
 
   }
 }
