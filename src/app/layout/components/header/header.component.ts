@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,9 +10,12 @@ export class HeaderComponent implements OnInit {
 
   isMenuCollapsed = true;
 
-  constructor() { }
+  constructor(private route : Router) {
+    route.events.subscribe(()=> this.isMenuCollapsed =true)
+   }
 
   ngOnInit(): void {
+    
   }
 
 }
