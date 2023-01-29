@@ -11,6 +11,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReparationLayoutComponent } from './reparation-layout/reparation-layout.component';
+import { MenuMdComponent } from './reparation-layout/components/menu-md/menu-md.component';
+import { IndecatorComponent } from './reparation-layout/components/indecator/indecator.component';
 
 
 
@@ -22,7 +25,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MenuComponent,
     ErrorLayoutComponent,
     AuthLayoutComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    ReparationLayoutComponent,
+    MenuMdComponent,
+    IndecatorComponent
   ],
   imports: [
     CommonModule,

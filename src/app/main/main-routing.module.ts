@@ -21,14 +21,14 @@ const routes: Routes = [
       }
     ]
   },
-  {
-    path: '', children: [
-      {
-        path: "reparation", 
-        component: ReparationComponent,
-      }
-    ]
-  },
+  // {
+  //   path: '', children: [
+  //     {
+  //       path: "reparation", 
+  //       component: ReparationComponent,
+  //     }
+  //   ]
+  // },
 ];
 
 @NgModule({

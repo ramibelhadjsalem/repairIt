@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
 import { ErrorLayoutComponent } from './layout/error-layout/error-layout.component';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
+import { ReparationLayoutComponent } from './layout/reparation-layout/reparation-layout.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,14 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('./main/main.module').then(m => m.MainModule)
+      }
+    ]
+  },
+  {
+    path: 'reparation', component: ReparationLayoutComponent, children: [
+      {
+        path: '',
+        loadChildren: () => import('./reparation/reparation.module').then(m => m.ReparationModule)
       }
     ]
   },

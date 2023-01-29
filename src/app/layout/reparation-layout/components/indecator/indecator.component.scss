@@ -1,0 +1,27 @@
+.container-fluid {
+    position: absolute;
+    bottom: 30px;
+
+    ul {
+        list-style: none;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+
+        li {
+            width: 25%;
+
+            a {
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: #ff991c8d;
+                border-radius: 5px;
+
+                &.active {
+                    background-color: #fea333;
+                }
+            }
+        }
+    }
+}
