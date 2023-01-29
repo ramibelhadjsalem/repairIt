@@ -8,25 +8,41 @@
             <div class="menu">
                 <ul>
                     <li class="tab-info position-relative">
-                        <a>
+                        <a routerLink="/reparation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> 
+                            <div class="icon">
+                                <i class="bi bi-check-lg"></i>
+                                <div class="bi bi-uncheked"></div>
+                            </div>
                             <div class="tab-title">Device details</div>
                             <div class="tab-description">Stp choisir le tupe de votre appraille</div>
                         </a>
                     </li>
                     <li class="tab-info position-relative">
-                        <a>
+                        <a routerLink="/reparation/discription" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <div class="icon">
+                                <i class="bi bi-check-lg d-none"></i>
+                                <div class="bi bi-uncheked"></div>
+                            </div>
                             <div class="tab-title">Décrire votre panne</div>
                             <div class="tab-description">decriver le panne de votre apparaiel</div>
                         </a>
                     </li>
                     <li class="tab-info position-relative">
-                        <a>
+                        <a routerLink="/reparation/address" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <div class="icon">
+                                <i class="bi bi-check-lg d-none"></i>
+                                <div class="bi bi-uncheked"></div>
+                            </div>
                             <div class="tab-title">Votre addresse</div>
                             <div class="tab-description">choisir votre addres actuelle</div>
                         </a>
                     </li>
                     <li class="tab-info position-relative">
-                        <a>
+                        <a routerLink="/reparation/livraison" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <div class="icon">
+                                <i class="bi bi-check-lg d-none"></i>
+                                <div class="bi bi-uncheked"></div>
+                            </div>
                             <div class="tab-title">Livraison details</div>
                             <div class="tab-description">Stp choisir le type livraison</div>
                         </a>

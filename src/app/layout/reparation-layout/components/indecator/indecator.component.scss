@@ -13,13 +13,17 @@
 
             a {
                 display: block;
-                height: 5px;
+                height: 7px;
                 width: 100%;
-                background-color: #ff991c8d;
+                // background-color: #ff991c8d;
                 border-radius: 5px;
+                border: 1px solid #fea333;
+                box-shadow: 0 3px 6px #00000029;
 
                 &.active {
                     background-color: #fea333;
+                    box-shadow: 0 3px 6px #fea333;
+
                 }
             }
         }
