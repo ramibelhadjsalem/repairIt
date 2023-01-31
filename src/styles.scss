@@ -99,15 +99,11 @@ body { margin: 0; padding: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  // &.active{
-
-  // }
-
-   
 }
 .spinner-container.active + .maincontainer{
   display: none;
 }
+
 @keyframes lds-roller {
 	0% {
 		transform: rotate(0deg);
@@ -131,7 +127,7 @@ body { margin: 0; padding: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
 			width: 7px;
 			height: 7px;
 			border-radius: 50%;
-			background: rgb(172, 24, 24);
+			background:#ff981c;
 			margin: -4px 0 0 -4px;
 		}
 		&:nth-child(1) {
