@@ -1,1 +1,4 @@
-<router-outlet></router-outlet>
+<router-outlet *ngIf="!loadingRouteConfig"></router-outlet>
+<div class="spinner-container" *ngIf="loadingRouteConfig">
+    <app-spinner></app-spinner>
+</div>

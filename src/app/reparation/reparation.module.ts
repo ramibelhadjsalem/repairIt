@@ -8,6 +8,8 @@ import { AddressComponent } from './address/address.component';
 import { LivraisonComponent } from './livraison/livraison.component';
 
 
+
+
 @NgModule({
   declarations: [
     DeviceTypeComponent,
@@ -17,7 +19,9 @@ import { LivraisonComponent } from './livraison/livraison.component';
   ],
   imports: [
     CommonModule,
-    ReparationRoutingModule
+    ReparationRoutingModule,
+    
+
   ]
 })
 export class ReparationModule { }
