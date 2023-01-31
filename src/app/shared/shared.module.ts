@@ -9,7 +9,6 @@ import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BestRepairersComponent } from './components/best-repairers/best-repairers.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     CarouselStepComponent,
     CartReparateurComponent,
     BestRepairersComponent,
-    SpinnerComponent
+    
   ],
   imports: [
     CommonModule,
@@ -36,7 +35,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     CarouselStepComponent,
     CartReparateurComponent,
     BestRepairersComponent,
-    SpinnerComponent
+    
   ],
 })
 export class SharedModule { }

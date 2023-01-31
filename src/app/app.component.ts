@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { RouteConfigLoadEnd, RouteConfigLoadStart, Router } from '@angular/router';
 
 @Component({
@@ -6,22 +6,20 @@ import { RouteConfigLoadEnd, RouteConfigLoadStart, Router } from '@angular/route
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'repairIt';
-  loadingRouteConfig = false
-  constructor(private route:Router){
+  
+  constructor(private route:Router){}
+  ngOnInit(): void {
+    let spinner =document.getElementById("spinner-g")
     this.route.events.subscribe(event=>{
-      console.log("loading event",event);
-      
       if (event instanceof RouteConfigLoadStart) {
-        this.loadingRouteConfig = true;
+        spinner?.classList.add("active")
       }
       if (event instanceof RouteConfigLoadEnd) {
-     
-        this.loadingRouteConfig = false;
-      }
+        spinner?.classList.remove("active")
         
-    
+      }
     })
   }
   
