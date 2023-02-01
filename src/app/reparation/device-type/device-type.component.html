@@ -9,6 +9,7 @@
         <h1 class="text-uppercase text-nowrap h2">PC PORTABLE À RÉPARER</h1>
     </div>
     <div class="container">
+        <i class="fa-brands fa-apple"></i>
         <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5">
             <div class="col apptype-card" *ngFor="let item of appType">
                 <input type="radio" name="brand" [id]="item.name" [value]="item.name" formControlName="brand">
