@@ -1,4 +1,3 @@
-import { Router } from '@angular/router';
 import { Component, Input, OnInit } from '@angular/core';
 import { User } from 'src/app/services/models/User';
 import { randomInt } from 'crypto';
@@ -24,7 +23,7 @@ export class CartReparateurComponent implements OnInit {
   ngOnInit(): void {
     // if(!this.Model.photoUrl){
     //   this.Model.photoUrl="../../../../../../assets/images/profile-2.png"
-    // }
+    // 
     if (this.Model == null) {
       this.Model = {
         id: 100,
