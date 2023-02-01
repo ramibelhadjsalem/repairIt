@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./verification.component.scss']
 })
 export class VerificationComponent implements OnInit {
-  verificationForm !:FormGroup ; 
-  constructor(private fb:FormBuilder,private route:Router) { }
+  verificationForm !:UntypedFormGroup ; 
+  constructor(private fb:UntypedFormBuilder,private route:Router) { }
 
   ngOnInit(): void {
     this.initVerificationForm()

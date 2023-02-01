@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
@@ -11,11 +11,11 @@ import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
 export class RegisterComponent implements OnInit {
   faFacebookF: any = faFacebookF;
   faGoogleD: any =faGoogle
-  registerForm !:FormGroup;
+  registerForm !:UntypedFormGroup;
   validationErrors: string[] = [];
 
 
-  constructor(  private fb:FormBuilder,private route:Router) { }
+  constructor(  private fb:UntypedFormBuilder,private route:Router) { }
   ngOnInit(): void {
     this.initRegister()
   }

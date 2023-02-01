@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,SecurityContext  } from '@angular/core';
+import { Brand } from 'src/app/services/models/Brand';
+import brands from "../brands.json"
 
 @Component({
   selector: 'app-device-type',
@@ -6,26 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./device-type.component.scss']
 })
 export class DeviceTypeComponent implements OnInit {
-  appType = [
-    {name:"Acer"},
-    {name:"Asus"},
-    {name:"Dell"},
-    {name:"Lenovo"},
-    {name:"Samsung"},
-    {name:"Apple"},
-    {name:"Hp"},
-    {name:"Toshiba"},
-    {name:"Sony"},
-    {name:"Clevo"},
-    {name:"Gigabyte"},
-    {name:"Acer"},
-    {name:"Asus"},
-    {name:"Dell"},
-    {name:"Autre"},
-  ]
+
+  brands :Brand[] = brands
+ 
   constructor() { }
 
   ngOnInit(): void {
+    
+    
   }
 
 }

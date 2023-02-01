@@ -6,6 +6,8 @@ import { DeviceTypeComponent } from './device-type/device-type.component';
 import { DiscriptionComponent } from './discription/discription.component';
 import { AddressComponent } from './address/address.component';
 import { LivraisonComponent } from './livraison/livraison.component';
+import { DiviceBrandComponent } from './components/divice-brand/divice-brand.component';
+import { DeviceCategorieComponent } from './device-categorie/device-categorie.component';
 
 
 
@@ -15,7 +17,9 @@ import { LivraisonComponent } from './livraison/livraison.component';
     DeviceTypeComponent,
     DiscriptionComponent,
     AddressComponent,
-    LivraisonComponent
+    LivraisonComponent,
+    DiviceBrandComponent,
+    DeviceCategorieComponent
   ],
   imports: [
     CommonModule,

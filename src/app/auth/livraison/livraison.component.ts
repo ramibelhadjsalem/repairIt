@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import {  Router } from '@angular/router';
 
 @Component({
@@ -9,9 +9,9 @@ import {  Router } from '@angular/router';
 })
 export class LivraisonComponent implements OnInit {
 
-  livraisonForm !: FormGroup
+  livraisonForm !: UntypedFormGroup
 
-  constructor(private fb: FormBuilder,private route:Router) { }
+  constructor(private fb: UntypedFormBuilder,private route:Router) { }
   ngOnInit(): void {
     this.initLivraisonForm()
   }

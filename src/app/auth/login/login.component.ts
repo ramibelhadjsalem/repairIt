@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import {faFacebookF, faGoogle} from "@fortawesome/free-brands-svg-icons";
@@ -13,13 +13,13 @@ import { AccountServiceService } from 'src/app/services/services/account.service
 export class LoginComponent implements OnInit {
   faFacebookF: any = faFacebookF;
   faGoogleD: any =faGoogle
-  loginForm!: FormGroup;
+  loginForm!: UntypedFormGroup;
   validationErrors : string[]=[] ; 
   passwordIncorrect:Boolean=false
   emailinvalid:boolean=false
 
 
-  constructor(private fb: FormBuilder ,
+  constructor(private fb: UntypedFormBuilder ,
   
     private router:Router,
    ) { }
